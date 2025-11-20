@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const PROMO_PATH = process.env.PROMO_FILE_PATH || path.join(__dirname, '..', 'public', 'promo.json');
+const PROMO_PATH = path.join(__dirname, '..', 'promo.json');
 const ALLOW_LIST = (process.env.CORS_ALLOW_LIST || '').split(',').map(s => s.trim()).filter(Boolean);
 const ADMIN_ID = process.env.ADMIN_ID;
 const ADMIN_PASS = process.env.ADMIN_PASS;
